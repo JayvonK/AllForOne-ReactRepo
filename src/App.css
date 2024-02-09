@@ -42,6 +42,10 @@
   src: url(./assets/Jost-Bold.ttf);
 }
 
+.jost {
+  font-family: Jost;
+}
+
 .darkBlue {
   color: #161a30;
 }
@@ -178,7 +182,7 @@
 .apiBox {
   margin-top: 150px;
   background-color: #161a30;
-  height: 275px;
+  min-height: 275px;
   width: 1066px;
 }
 
@@ -187,7 +191,7 @@
   font-family: Jost;
   text-align: center;
   margin-top: 35px;
-  padding-bottom: 100px;
+  padding-bottom: 145px;
   margin-bottom: 0px;
 }
 
@@ -200,7 +204,34 @@
   overflow-y: hidden;
 }
 
+
+
+/* Name Time Page */
+
+.nameTxt {
+  padding-left: 50px;
+  font-size: 64px;
+  color: #f0ece5;
+  font-family: Jost;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.nameInput {
+  width: 710px;
+  height: 63px;
+  margin-bottom: 15px;
+  font-size: 55px;
+  background-color: #f0ece5;
+}
+
+
+/* Greater Less Than Page */
+
 .greaterLessResult {
+  padding: 20px;
   color: #f0ece5;
   font-size: 64px;
   font-family: Jost;
