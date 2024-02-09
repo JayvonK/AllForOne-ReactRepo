@@ -202,6 +202,8 @@
   text-align: center;
   overflow-x: scroll;
   overflow-y: hidden;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 

@@ -9,6 +9,7 @@ import HomePageComponent from './components/HomePageComponent';
 import NameTimeComponent from './components/NameTimeComponent';
 import GreaterLessComponent from './components/GreaterLessComponent';
 import OddOrEvenComponent from './components/OddOrEvenComponent';
+import ReverseIt1Component from './components/ReverseIt1Component';
 
 function App() {
   return (
@@ -23,7 +24,8 @@ function App() {
     <Route path='NameTimePage' element={<NameTimeComponent/>}/>
     <Route path='GreaterLessPage' element={<GreaterLessComponent/>}/>
     <Route path='OddEvenPage' element={<OddOrEvenComponent/>}/>
-    
+    <Route path='ReverseOnePage' element={<ReverseIt1Component/>}/>
+
     </Routes>
     </BrowserRouter>
   );

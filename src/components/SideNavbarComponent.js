@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import plus from '../assets/plus icon.png';
 
 export default function SideNavbarComponent() {
     return (
@@ -7,7 +8,7 @@ export default function SideNavbarComponent() {
             <div className='itemsDiv'>
                 <div className='navItem '>
                 <Link to={'SumPage'} className='link d-flex'>
-                  <img src='../assets/plus icon.png'/>
+                  <img src={plus}/>
                 <h1 className='navTxt'>THE SUM</h1>  
                 </Link>
             </div>
@@ -36,7 +37,7 @@ export default function SideNavbarComponent() {
                 </Link>
             </div>
             <div className='navItem '>
-                <Link to={''} className='link d-flex'>
+                <Link to={'ReverseOnePage'} className='link d-flex'>
                   <img src='../assets/plus icon.png'/>
                 <h1 className='navTxt'>REVERSE IT I</h1>  
                 </Link>
