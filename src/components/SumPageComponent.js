@@ -1,5 +1,15 @@
 import React from 'react'
 
+let runBtn = document.getElementById("runBtn");
+
+const runBtnClick = () => {
+    if(runBtn.textContent === "RUN"){
+        runBtn.textContent = "AGAIN"
+    } else {
+        runBtn.textContent = "RUN";
+    }
+}
+
 export default function SumPageComponent() {
     return (
         <div className='homeBg'>
@@ -12,7 +22,7 @@ export default function SumPageComponent() {
             </div>
 
             <div className='d-flex justify-content-center'>
-                <button className='runBtn'>RUN</button>
+                <button id='runBtn' onClick={() => runBtnClick()} className='runBtn'>RUN</button>
             </div>
             <p className='darkBlue apiRules'>*Instructions: Input two numbers above to get the sum</p>
         </div>
