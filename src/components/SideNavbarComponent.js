@@ -49,7 +49,7 @@ export default function SideNavbarComponent() {
                 </Link>
             </div>
             <div className='navItem '>
-                <Link to={''} className='link d-flex'>
+                <Link to={'EightBallPage'} className='link d-flex'>
                   <img src='../assets/plus icon.png'/>
                 <h1 className='navTxt'>8 BALL</h1>  
                 </Link>

@@ -11,6 +11,7 @@ import GreaterLessComponent from './components/GreaterLessComponent';
 import OddOrEvenComponent from './components/OddOrEvenComponent';
 import ReverseIt1Component from './components/ReverseIt1Component';
 import ReverseIt2Component from './components/ReverseIt2Component';
+import EightBallComponent from './components/EightBallComponent';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
     <Route path='OddEvenPage' element={<OddOrEvenComponent/>}/>
     <Route path='ReverseOnePage' element={<ReverseIt1Component/>}/>
     <Route path='ReverseTwoPage' element={<ReverseIt2Component/>}/>
+    <Route path='EightBallPage' element={<EightBallComponent/>}/>
 
     </Routes>
     </BrowserRouter>

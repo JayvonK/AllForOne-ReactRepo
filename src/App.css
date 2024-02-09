@@ -263,3 +263,31 @@
   padding: 20px;
   font-size: 96px;
 }
+
+/* Eight Ball Page  */
+.flow {
+  flex-direction: column;
+}
+
+.inputEightBall {
+  height: 100px;
+  width: 90%;
+  font-family: Jost;
+  font-size: 64px;
+  text-align: center;
+  background-color: #f0ece5;
+}
+
+.eightBallTxt {
+  font-size: 64px;
+  color: #f0ece5;
+  margin-bottom: 15px;
+}
+
+.eightBallResult {
+  font-size: 64px;
+  color: #f0ece5;
+  text-align: center;
+  padding: 20px;
+  font-family: Jost;
+}
