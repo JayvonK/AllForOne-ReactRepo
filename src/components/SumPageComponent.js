@@ -46,7 +46,7 @@ export default function SumPageComponent() {
                         <input id='input2' onChange={(e) => setNumTwo(e.target.value)} className='inputNums' placeholder='456'></input>
                     </div>
 
-                    <h1 id='results' className='result d-none'>{result}</h1>
+                    <h1 id='results' className='sumResult d-none'>{result}</h1>
                 </div>
             </div>
 

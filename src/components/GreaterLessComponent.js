@@ -39,11 +39,11 @@ export default function GreaterLessComponent() {
                 <div className='apiBox d-flex justify-content-center align-items-center'>
                     <div id='disappearDiv' className='d-flex justify-content-center align-items-center'>
                         <input id='input1' onChange={(e) => setNumOne(e.target.value)} className='inputNums' placeholder='123'></input>
-                        <h1 className='plus'>+</h1>
+                        <h1 className='plus'>?</h1>
                         <input id='input2' onChange={(e) => setNumTwo(e.target.value)} className='inputNums' placeholder='456'></input>
                     </div>
 
-                    <h1 id='results' className='result d-none'>{result}</h1>
+                    <h1 id='results' className='greaterLessResult d-none'>{result}</h1>
                 </div>
             </div>
 

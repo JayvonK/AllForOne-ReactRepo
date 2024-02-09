@@ -191,11 +191,20 @@
   margin-bottom: 0px;
 }
 
-.result {
+.sumResult {
   color: #f0ece5;
-  font-size: 64px;
+  font-size: 96px;
   font-family: Jost;
   text-align: center;
   overflow-x: scroll;
   overflow-y: hidden;
+}
+
+.greaterLessResult {
+  color: #f0ece5;
+  font-size: 64px;
+  font-family: Jost;
+  text-align: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
