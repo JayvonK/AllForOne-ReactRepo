@@ -290,13 +290,14 @@
   font-family: Jost;
   font-size: 64px;
   text-align: center;
-  background-color: #f0ece5;
+  background-color: #f0ece5; 
+  margin-bottom: 15px;
 }
 
 .eightBallTxt {
   font-size: 64px;
   color: #f0ece5;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .eightBallResult {
@@ -320,6 +321,8 @@
   height: 59px;
   background-color: #f0ece5;
   width: 100%;
+  font-size: 36px;
+  margin:20px;
 }
 
 .madLibRow {

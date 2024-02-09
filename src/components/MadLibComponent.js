@@ -7,26 +7,30 @@ import { MadLibApi } from '../Services/DataServices.js';
 export default function MadLibComponent() {
     let disappearDiv = document.getElementById("disappearDiv");
     let results = document.getElementById("results");
-    let nameInput = document.getElementById("nameInput");
-    let timeInput = document.getElementById("timeInput");
 
-    const [numOne, setNumOne] = useState('');
-    const [numTwo, setNumTwo] = useState('');
+    const [inpOne, setInpOne] = useState('');
+    const [inpTwo, setInpTwo] = useState('');
+    const [inpThree, setInpThree] = useState('');
+    const [inpFour, setInpFour] = useState('');
+    const [inpFive, setInpFive] = useState('');
+    const [inpSix, setInpSix] = useState('');
+    const [inpSeven, setInpSeven] = useState('');
+    const [inpEight, setInpEight] = useState('');
+    const [inpNine, setInpNine] = useState('');
+    const [inpTen, setInpTen] = useState('');
     const [result, setResult] = useState('');
     const [runBtn, setRunBtn] = useState('RUN');
 
     const runBtnClick = async () => {
-        if (numOne !== '' && numTwo !== '') {
+        if (inpOne !== '' && inpTwo !== '') {
             if (runBtn === "RUN") {
                 setResult('');
-                const ans = await MadLibApi(numOne, numTwo);
+                const ans = await MadLibApi(inpOne, inpTwo);
                 disappearDiv.classList.add("d-none");
                 results.classList.remove("d-none");
                 setResult(ans);
                 setRunBtn('AGAIN');
             } else {
-                nameInput.value = "";
-                timeInput.value = "";
                 disappearDiv.classList.remove("d-none");
                 results.classList.add("d-none");
                 setRunBtn('RUN');
@@ -44,39 +48,39 @@ export default function MadLibComponent() {
                     <div className='boxDiv'>
                         <div className='madLibBox d-flex justify-content-center align-items-center'>
                             <div id='disappearDiv' className='w100 h100'>
-                                <Row className='madLibRow h100'>
+                                <Row id='disappearDiv' className='madLibRow h100'>
                                     <Col>
                                         <Row className='g-0'>
-                                            <input className='madLibInput jost darkBlue' placeholder='Name'></input>
+                                            <input onChange={''} className='madLibInput jost darkBlue' placeholder='Celebrity Name'></input>
                                         </Row>
                                         <Row className='g-0'>
-                                            <input className='madLibInput jost darkBlue' placeholder='Name'></input>
+                                            <input className='madLibInput jost darkBlue' placeholder='Animal'></input>
                                         </Row>
                                         <Row className='g-0'>
-                                            <input className='madLibInput jost darkBlue' placeholder='Name'></input>
+                                            <input className='madLibInput jost darkBlue' placeholder='Noun Ending With S'></input>
                                         </Row>
                                         <Row className='g-0'>
-                                            <input className='madLibInput jost darkBlue' placeholder='Name'></input>
+                                            <input className='madLibInput jost darkBlue' placeholder='Number > 1'></input>
                                         </Row>
                                         <Row className='g-0'>
-                                            <input className='madLibInput jost darkBlue' placeholder='Name'></input>
+                                            <input className='madLibInput jost darkBlue' placeholder='Time'></input>
                                         </Row>
                                     </Col>
                                     <Col>
                                         <Row className='g-0'>
-                                            <input className='madLibInput jost darkBlue' placeholder='Name'></input>
+                                            <input className='madLibInput jost darkBlue' placeholder='Height'></input>
+                                        </Row>
+                                        <Row className='g-0'>
+                                            <input className='madLibInput jost darkBlue' placeholder='Adjective'></input>
                                         </Row>
                                         <Row className='g-0'>
                                             <input className='madLibInput jost darkBlue' placeholder='Name'></input>
                                         </Row>
                                         <Row className='g-0'>
-                                            <input className='madLibInput jost darkBlue' placeholder='Name'></input>
+                                            <input className='madLibInput jost darkBlue' placeholder='Condiment'></input>
                                         </Row>
                                         <Row className='g-0'>
-                                            <input className='madLibInput jost darkBlue' placeholder='Name'></input>
-                                        </Row>
-                                        <Row className='g-0'>
-                                            <input className='madLibInput jost darkBlue' placeholder='Name'></input>
+                                            <input className='madLibInput jost darkBlue' placeholder='Body Part'></input>
                                         </Row>
                                     </Col>
                                 </Row>
