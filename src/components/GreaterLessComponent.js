@@ -37,17 +37,21 @@ export default function GreaterLessComponent() {
     }
     return (
         <div className='homeBg'>
-            <Row className='g-0'>
+           <Row className='g-0'>
                 <Col lg={1}></Col>
                 <Col lg={10}>
                     <div className='boxDiv'>
                         <div className='apiBox d-flex justify-content-center align-items-center'>
-                            <div id='disappearDiv' className='d-flex justify-content-center align-items-center'>
+                            <Row id='disappearDiv' className='sumRow'>
+                            <Col className='d-flex justify-content-center'>
                                 <input id='input1' onChange={(e) => setNumOne(e.target.value)} className='inputNums' placeholder='123'></input>
-                                <h1 className='plus'>?</h1>
-                                <input id='input2' onChange={(e) => setNumTwo(e.target.value)} className='inputNums' placeholder='456'></input>
-                            </div>
-
+                                </Col>
+                             <Col lg={3} className='d-flex justify-content-center align-items-center'>
+                             <h1 className='plus'>?</h1>
+                             </Col>
+                             <Col className='d-flex justify-content-center'>
+                                <input id='input2' onChange={(e) => setNumTwo(e.target.value)} className='inputNums' placeholder='456'></input></Col>
+                            </Row>
                             <h1 id='results' className='greaterLessResult d-none'>{result}</h1>
                         </div>
                     </div>

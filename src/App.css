@@ -215,8 +215,12 @@
 
 /* Name Time Page */
 
+.nameRow {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
 .nameTxt {
-  padding-left: 50px;
   font-size: 64px;
   color: #f0ece5;
   font-family: Jost;
@@ -227,8 +231,8 @@
 }
 
 .nameInput {
-  width: 710px;
-  height: 63px;
+  width: 100%;
+  height: 68px;
   margin-bottom: 15px;
   font-size: 55px;
   background-color: #f0ece5;

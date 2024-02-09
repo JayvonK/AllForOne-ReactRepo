@@ -45,7 +45,7 @@ export default function NameTimeComponent() {
                     <div className='boxDiv'>
                         <div className='apiBox d-flex justify-content-center align-items-center'>
                             <div id='disappearDiv' className='w100'>
-                                <Row>
+                                <Row className='nameRow'>
                                     <Col lg={3}>
                                         <p className='nameTxt'>Name:</p>
                                     </Col>
@@ -53,7 +53,7 @@ export default function NameTimeComponent() {
                                         <input id='nameInput' onChange={(e) => setNumOne(e.target.value)} className='nameInput darkBlue jost'></input>
                                     </Col>
                                 </Row>
-                                <Row>
+                                <Row className='nameRow'>
                                     <Col lg={3}>
                                         <p className='nameTxt'>Time:</p>
                                     </Col>
