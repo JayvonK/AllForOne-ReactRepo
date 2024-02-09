@@ -130,7 +130,7 @@
   margin-top: 200px;
   background-color: #161a30;
   height: 275px;
-  width: 1066px;
+  width: 100%;
 }
 
 .homeRules{
@@ -150,9 +150,14 @@
 
 /* Sum Page */
 
+.sumRow {
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
 .inputNums {
   height: 140px;
-  width: 360px;
+  width: 100%;
   font-family: Jost;
   font-size: 86px;
   text-align: center;
@@ -183,7 +188,7 @@
   margin-top: 150px;
   background-color: #161a30;
   min-height: 275px;
-  width: 1066px;
+  width: 100%;
 }
 
 .apiRules {

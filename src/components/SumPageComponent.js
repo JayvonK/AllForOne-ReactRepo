@@ -1,6 +1,8 @@
 import React from 'react'
 import { SumApi } from '../Services/DataServices.js';
 import { useState } from 'react';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 
@@ -38,22 +40,39 @@ export default function SumPageComponent() {
     }
     return (
         <div className='homeBg'>
-            <div className='boxDiv'>
-                <div className='apiBox d-flex justify-content-center align-items-center'>
-                    <div id='disappearDiv' className='d-flex justify-content-center align-items-center'>
-                        <input id='input1' onChange={(e) => setNumOne(e.target.value)} className='inputNums' placeholder='123'></input>
-                        <h1 className='plus'>+</h1>
-                        <input id='input2' onChange={(e) => setNumTwo(e.target.value)} className='inputNums' placeholder='456'></input>
+            <Row className='g-0'>
+                <Col lg={1}></Col>
+                <Col lg={10}>
+                    <div className='boxDiv'>
+                        <div className='apiBox d-flex justify-content-center align-items-center'>
+                            <Row className='sumRow'>
+                            <Col className='d-flex justify-content-center'>
+                                <input id='input1' onChange={(e) => setNumOne(e.target.value)} className='inputNums' placeholder='123'></input>
+                                </Col>
+                             <Col lg={3} className='d-flex justify-content-center align-items-center'>
+                             <h1 className='plus'>+</h1>
+                             </Col>
+                             <Col className='d-flex justify-content-center'>
+                                <input id='input2' onChange={(e) => setNumTwo(e.target.value)} className='inputNums' placeholder='456'></input></Col>
+                            </Row>
+                            {/* <div id='disappearDiv' className='d-flex justify-content-center align-items-center'>
+                                <input id='input1' onChange={(e) => setNumOne(e.target.value)} className='inputNums' placeholder='123'></input>
+                                <h1 className='plus'>+</h1>
+                                <input id='input2' onChange={(e) => setNumTwo(e.target.value)} className='inputNums' placeholder='456'></input>
+                            </div> */}
+                            <h1 id='results' className='sumResult d-none'>{result}</h1>
+                        </div>
                     </div>
 
-                    <h1 id='results' className='sumResult d-none'>{result}</h1>
-                </div>
-            </div>
+                    <div className='d-flex justify-content-center'>
+                        <button id='runBtn' onClick={() => runBtnClick()} className='runBtn'>{runBtn}</button>
+                    </div>
+                    <p className='darkBlue apiRules'>*Instructions: Input two numbers above to get the sum</p>
+                </Col>
+                <Col lg={1}></Col>
+            </Row>
 
-            <div className='d-flex justify-content-center'>
-                <button id='runBtn' onClick={() => runBtnClick()} className='runBtn'>{runBtn}</button>
-            </div>
-            <p className='darkBlue apiRules'>*Instructions: Input two numbers above to get the sum</p>
+
         </div>
     )
 }

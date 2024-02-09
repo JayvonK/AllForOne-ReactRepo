@@ -39,35 +39,42 @@ export default function NameTimeComponent() {
 
     return (
         <div className='homeBg'>
-            <div className='boxDiv'>
-                <div className='apiBox d-flex justify-content-center align-items-center'>
-                    <div id='disappearDiv' className='w100'>
-                        <Row>
-                            <Col lg={3}>
-                                <p className='nameTxt'>Name:</p>
-                            </Col>
-                            <Col lg={9} className='d-flex align-items-center'>
-                                <input id='nameInput' onChange={(e) => setNumOne(e.target.value)} className='nameInput darkBlue jost'></input>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col lg={3}>
-                                <p className='nameTxt'>Time:</p>
-                            </Col>
-                            <Col lg={9} className='d-flex align-items-center'>
-                                <input id='timeInput' onChange={(e) => setNumTwo(e.target.value)} className='nameInput darkBlue jost'></input>
-                            </Col>
-                        </Row>
+            <Row className='g-0'>
+                <Col lg={1}></Col>
+                <Col lg={10}>
+                    <div className='boxDiv'>
+                        <div className='apiBox d-flex justify-content-center align-items-center'>
+                            <div id='disappearDiv' className='w100'>
+                                <Row>
+                                    <Col lg={3}>
+                                        <p className='nameTxt'>Name:</p>
+                                    </Col>
+                                    <Col lg={9} className='d-flex align-items-center'>
+                                        <input id='nameInput' onChange={(e) => setNumOne(e.target.value)} className='nameInput darkBlue jost'></input>
+                                    </Col>
+                                </Row>
+                                <Row>
+                                    <Col lg={3}>
+                                        <p className='nameTxt'>Time:</p>
+                                    </Col>
+                                    <Col lg={9} className='d-flex align-items-center'>
+                                        <input id='timeInput' onChange={(e) => setNumTwo(e.target.value)} className='nameInput darkBlue jost'></input>
+                                    </Col>
+                                </Row>
+                            </div>
+
+                            <h1 id='results' className='greaterLessResult d-none'>{result}</h1>
+                        </div>
                     </div>
 
-                    <h1 id='results' className='greaterLessResult d-none'>{result}</h1>
-                </div>
-            </div>
+                    <div className='d-flex justify-content-center'>
+                        <button id='runBtn' onClick={() => runBtnClick()} className='runBtn'>{runBtn}</button>
+                    </div>
+                    <p className='darkBlue apiRules'>*Instructions: Input two numbers above to get the sum</p>
+                </Col>
+                <Col lg={1}></Col>
+            </Row>
 
-            <div className='d-flex justify-content-center'>
-                <button id='runBtn' onClick={() => runBtnClick()} className='runBtn'>{runBtn}</button>
-            </div>
-            <p className='darkBlue apiRules'>*Instructions: Input two numbers above to get the sum</p>
         </div>
     )
 }

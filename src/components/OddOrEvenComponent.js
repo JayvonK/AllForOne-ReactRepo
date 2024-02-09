@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import { OddOrEvenApi } from '../Services/DataServices.js';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 export default function OddOrEvenComponent() {
     let disappearDiv = document.getElementById("disappearDiv");
@@ -32,20 +34,27 @@ export default function OddOrEvenComponent() {
     }
     return (
         <div className='homeBg'>
-            <div className='boxDiv'>
-                <div className='apiBox d-flex justify-content-center align-items-center'>
-                    <div id='disappearDiv' className='d-flex justify-content-center align-items-center'>
-                        <input id='input1' onChange={(e) => setNumOne(e.target.value)} className='inputOdd' placeholder='123'></input>
+            <Row className='g-0'>
+                <Col lg={1}></Col>
+                <Col lg={10}>
+                    <div className='boxDiv'>
+                        <div className='apiBox d-flex justify-content-center align-items-center'>
+                            <div id='disappearDiv' className='d-flex justify-content-center align-items-center'>
+                                <input id='input1' onChange={(e) => setNumOne(e.target.value)} className='inputOdd' placeholder='123'></input>
+                            </div>
+
+                            <h1 id='results' className='oddResult d-none'>{result}</h1>
+                        </div>
                     </div>
 
-                    <h1 id='results' className='oddResult d-none'>{result}</h1>
-                </div>
-            </div>
+                    <div className='d-flex justify-content-center'>
+                        <button id='runBtn' onClick={() => runBtnClick()} className='runBtn'>{runBtn}</button>
+                    </div>
+                    <p className='darkBlue apiRules'>*Instructions: Input two numbers above to get the sum</p>
+                </Col>
+                <Col lg={1}></Col>
+            </Row>
 
-            <div className='d-flex justify-content-center'>
-                <button id='runBtn' onClick={() => runBtnClick()} className='runBtn'>{runBtn}</button>
-            </div>
-            <p className='darkBlue apiRules'>*Instructions: Input two numbers above to get the sum</p>
         </div>
     )
 }

@@ -55,13 +55,13 @@ export default function SideNavbarComponent() {
                 </Link>
             </div>
             <div className='navItem '>
-                <Link to={''} className='link d-flex'>
+                <Link to={'RestaurantPage'} className='link d-flex'>
                   <img src='../assets/plus icon.png'/>
                 <h1 className='navTxt'>RESTAURANTS</h1>  
                 </Link>
             </div>
             <div className='navItem '>
-                <Link to={''} className='link d-flex'>
+                <Link to={'SayHelloPage'} className='link d-flex'>
                   <img src='../assets/plus icon.png'/>
                 <h1 className='navTxt'>SAY HELLO</h1>  
                 </Link>
