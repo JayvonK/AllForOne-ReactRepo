@@ -144,3 +144,50 @@
   font-size: 128px;
 }
 
+/* Sum Page */
+
+.inputNums {
+  height: 140px;
+  width: 360px;
+  font-family: Jost;
+  font-size: 96px;
+  text-align: center;
+  background-color: #f0ece5;
+  border-radius: 20px;
+}
+
+.plus {
+  font-family: Jost;
+  color: #f0ece5;
+  margin-left: 65px;
+  margin-right: 65px;
+  font-size: 128px;
+}
+
+.runBtn {
+  margin-top: 100px;
+  width: 470px;
+  height: 120px;
+  font-family: Jost;
+  color: #f0ece5;
+  font-size: 64px;
+  border-radius: 100px;
+  background-color: #161a30;
+}
+
+.apiBox {
+  margin-top: 150px;
+  background-color: #161a30;
+  height: 275px;
+  width: 1066px;
+}
+
+.apiRules {
+  font-size: 32px;
+  font-family: Jost;
+  text-align: center;
+  margin-top: 35px;
+  padding-bottom: 100px;
+  margin-bottom: 0px;
+}
+

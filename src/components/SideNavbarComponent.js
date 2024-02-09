@@ -6,7 +6,7 @@ export default function SideNavbarComponent() {
         <div className='sideNav'>
             <div className='itemsDiv'>
                 <div className='navItem '>
-                <Link to={''} className='link d-flex'>
+                <Link to={'SumPage'} className='link d-flex'>
                   <img src='../assets/plus icon.png'/>
                 <h1 className='navTxt'>THE SUM</h1>  
                 </Link>

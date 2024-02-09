@@ -13,10 +13,10 @@ function App() {
     <SideNavBarComponent/>
     <HeaderComponent/>
     
-    <HomePageComponent/>
     <Routes>
 
-
+    <Route path='/' element={<HomePageComponent/>}/>
+    <Route path='SumPage' element={<SumPageComponent/>}/>
 
     </Routes>
     </BrowserRouter>
