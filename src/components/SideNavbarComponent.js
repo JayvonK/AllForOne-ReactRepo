@@ -12,13 +12,13 @@ export default function SideNavbarComponent() {
                 </Link>
             </div>
             <div className='navItem '>
-                <Link to={''} className='link d-flex'>
+                <Link to={'NameTimePage'} className='link d-flex'>
                   <img src='../assets/plus icon.png'/>
                 <h1 className='navTxt'>NAME & TIME</h1>  
                 </Link>
             </div>
             <div className='navItem '>
-                <Link to={''} className='link d-flex'>
+                <Link to={'GreaterLessPage'} className='link d-flex'>
                   <img src='../assets/plus icon.png'/>
                 <h1 className='navTxt'>GREATER? LESS?</h1>  
                 </Link>

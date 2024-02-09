@@ -1,11 +1,8 @@
-import React from 'react'
-import { SumApi } from '../Services/DataServices.js';
+import React from 'react';
 import { useState } from 'react';
+import { GreaterOrLessApi } from '../Services/DataServices.js';
 
-
-
-export default function SumPageComponent() {
-
+export default function GreaterLessComponent() {
     let disappearDiv = document.getElementById("disappearDiv");
     let results = document.getElementById("results");
     let input1 = document.getElementById("input1");
@@ -20,7 +17,7 @@ export default function SumPageComponent() {
         if (numOne !== '' && numTwo !== '') {
             if (runBtn === "RUN") {
                 setResult('');
-                const ans = await SumApi(numOne, numTwo)
+                const ans = await GreaterOrLessApi(numOne, numTwo);
                 disappearDiv.classList.add("d-none");
                 results.classList.remove("d-none");
                 setResult(ans);

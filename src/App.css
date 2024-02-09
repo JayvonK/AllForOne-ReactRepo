@@ -191,3 +191,11 @@
   margin-bottom: 0px;
 }
 
+.result {
+  color: #f0ece5;
+  font-size: 64px;
+  font-family: Jost;
+  text-align: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
