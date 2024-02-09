@@ -154,7 +154,7 @@
   height: 140px;
   width: 360px;
   font-family: Jost;
-  font-size: 96px;
+  font-size: 86px;
   text-align: center;
   background-color: #f0ece5;
   border-radius: 20px;
@@ -238,4 +238,26 @@
   text-align: center;
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+/* Odd or Even Page */
+
+.inputOdd {
+  height: 140px;
+  width: 100%;
+  font-family: Jost;
+  font-size: 86px;
+  text-align: center;
+  background-color: #f0ece5;
+  border-radius: 20px;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+.oddResult {
+  font-family: Jost;
+  color: #f0ece5;
+  text-align: center;
+  padding: 20px;
+  font-size: 96px;
 }

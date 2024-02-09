@@ -30,7 +30,7 @@ export default function SideNavbarComponent() {
                 </Link>
             </div>
             <div className='navItem '>
-                <Link to={''} className='link d-flex'>
+                <Link to={'OddEvenPage'} className='link d-flex'>
                   <img src='../assets/plus icon.png'/>
                 <h1 className='navTxt'>ODD OR EVEN</h1>  
                 </Link>
