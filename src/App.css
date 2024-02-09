@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.darkBlue {
+  color: #161a30;
+}
+
+.header {
+  height: 209px;
+  background-color: #f0ece5;
+}
