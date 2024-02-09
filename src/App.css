@@ -50,6 +50,10 @@
   color: #161a30;
 }
 
+.h100 {
+  height: 100%;
+}
+
 /* Header Classes */
 
 .header {
@@ -129,7 +133,7 @@
 .box {
   margin-top: 200px;
   background-color: #161a30;
-  height: 275px;
+  min-height: 275px;
   width: 100%;
 }
 
@@ -146,6 +150,8 @@
   font-family: Jost;
   color: #f0ece5;
   font-size: 128px;
+  text-align: center;
+  padding: 15px;
 }
 
 /* Sum Page */
@@ -299,4 +305,29 @@
   text-align: center;
   padding: 20px;
   font-family: Jost;
+}
+
+/* Mad Lib Page */
+
+.madLibBox {
+  margin-top: 50px;
+  background-color: #161a30;
+  min-height: 440px;
+  width: 100%;
+}
+
+.madLibInput {
+  height: 59px;
+  background-color: #f0ece5;
+  width: 100%;
+}
+
+.madLibRow {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.alignBetween{
+  display: flex;
+  align-content: space-between;
 }

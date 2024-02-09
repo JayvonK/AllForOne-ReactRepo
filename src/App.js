@@ -14,6 +14,7 @@ import ReverseIt2Component from './components/ReverseIt2Component';
 import EightBallComponent from './components/EightBallComponent';
 import RestaurantsComponent from './components/RestaurantsComponent';
 import SayHelloComponent from './components/SayHelloComponent';
+import MadLibComponent from './components/MadLibComponent';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
     <Route path='EightBallPage' element={<EightBallComponent/>}/>
     <Route path='RestaurantPage' element={<RestaurantsComponent/>}/>
     <Route path='SayHelloPage' element={<SayHelloComponent/>}/>
+    <Route path='MadLibPage' element={<MadLibComponent/>}/>
 
     </Routes>
     </BrowserRouter>
