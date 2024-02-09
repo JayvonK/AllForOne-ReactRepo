@@ -37,11 +37,77 @@
   }
 }
 
+@font-face {
+  font-family: Jost;
+  src: url(./assets/Jost-Bold.ttf);
+}
+
 .darkBlue {
   color: #161a30;
 }
 
 .header {
+  width: 100vw;
   height: 209px;
   background-color: #f0ece5;
+  position: fixed;
+  top: 0px;
+}
+
+.headerTxt {
+  font-size: 128px;
+  font-family: Jost;
+  text-decoration: none;
+}
+
+.headerTxt:hover {
+  text-decoration: underline;
+}
+
+.sideNav {
+  width: 470px;
+  position: fixed;
+  background-color: #161a30;
+  height: 100vh;
+  top: 209px;
+  overflow-y: auto;
+}
+
+.homeBg {
+  display: flex;
+  justify-content: center;
+  background-image: url();
+  height: 100vh;
+  margin-left: 470px;
+  margin-top: 209px;
+}
+
+.box {
+  margin-top: 200px;
+  background-color: #161a30;
+  height: 275px;
+  width: 1066px;
+}
+
+.navItem {
+  width: 100%;
+  padding: 20px;
+}
+
+.link {
+  padding-left: 10px;
+  padding-top: 12px;
+  padding-bottom: 6px;
+  text-decoration: none;
+}
+
+.link:hover {
+  background-color: hsl(0, 0%, 30%);
+}
+
+.navTxt {
+  font-size: 40px;
+  color: #f0ece5;
+  font-family: Jost;
+  text-decoration: none;
 }
