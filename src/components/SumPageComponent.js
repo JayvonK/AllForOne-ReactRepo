@@ -26,8 +26,8 @@ export default function SumPageComponent() {
                 setResult(ans);
                 setRunBtn('AGAIN');
             } else {
-                input1.textContent = "";
-                input2.textContent = "";
+                input1.value = "";
+                input2.value = "";
                 disappearDiv.classList.remove("d-none");
                 results.classList.add("d-none");
                 setRunBtn('RUN');

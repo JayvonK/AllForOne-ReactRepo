@@ -8,6 +8,8 @@ export default function NameTimeComponent() {
 
     let disappearDiv = document.getElementById("disappearDiv");
     let results = document.getElementById("results");
+    let nameInput = document.getElementById("nameInput");
+    let timeInput = document.getElementById("timeInput");
 
     const [numOne, setNumOne] = useState('');
     const [numTwo, setNumTwo] = useState('');
@@ -24,6 +26,8 @@ export default function NameTimeComponent() {
                 setResult(ans);
                 setRunBtn('AGAIN');
             } else {
+                nameInput.value = "";
+                timeInput.value = "";
                 disappearDiv.classList.remove("d-none");
                 results.classList.add("d-none");
                 setRunBtn('RUN');
@@ -43,7 +47,7 @@ export default function NameTimeComponent() {
                                 <p className='nameTxt'>Name:</p>
                             </Col>
                             <Col lg={9} className='d-flex align-items-center'>
-                                <input onChange={(e) => setNumOne(e.target.value)} className='nameInput darkBlue jost'></input>
+                                <input id='nameInput' onChange={(e) => setNumOne(e.target.value)} className='nameInput darkBlue jost'></input>
                             </Col>
                         </Row>
                         <Row>
@@ -51,7 +55,7 @@ export default function NameTimeComponent() {
                                 <p className='nameTxt'>Time:</p>
                             </Col>
                             <Col lg={9} className='d-flex align-items-center'>
-                                <input onChange={(e) => setNumTwo(e.target.value)} className='nameInput darkBlue jost'></input>
+                                <input id='timeInput' onChange={(e) => setNumTwo(e.target.value)} className='nameInput darkBlue jost'></input>
                             </Col>
                         </Row>
                     </div>
