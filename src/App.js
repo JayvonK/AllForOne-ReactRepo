@@ -5,13 +5,15 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HeaderComponent from './components/HeaderComponent';
 import SideNavBarComponent from './components/SideNavbarComponent';
 import SumPageComponent from './components/SumPageComponent';
+import HomePageComponent from './components/HomePageComponent';
 
 function App() {
   return (
     <BrowserRouter>
-    <HeaderComponent/>
     <SideNavBarComponent/>
-    <SumPageComponent/>
+    <HeaderComponent/>
+    
+    <HomePageComponent/>
     <Routes>
 
 
