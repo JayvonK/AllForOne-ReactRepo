@@ -322,12 +322,23 @@
   background-color: #f0ece5;
   width: 100%;
   font-size: 36px;
-  margin:20px;
+  margin: 20px;
+  border: none;
 }
 
 .madLibRow {
   padding-left: 50px;
   padding-right: 50px;
+}
+
+.madLibResult {
+  padding: 20px;
+  color: #f0ece5;
+  font-size: 32px;
+  font-family: Jost;
+  text-align: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .alignBetween{

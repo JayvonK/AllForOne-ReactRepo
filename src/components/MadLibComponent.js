@@ -22,10 +22,10 @@ export default function MadLibComponent() {
     const [runBtn, setRunBtn] = useState('RUN');
 
     const runBtnClick = async () => {
-        if (inpOne !== '' && inpTwo !== '') {
+        if (inpOne !== '' && inpTwo !== '' && inpThree !== '' && inpFour !== '' && inpFive !== '' && inpSix !== '' && inpSeven !== '' && inpEight !== '' && inpNine !== '' && inpTen !== '') {
             if (runBtn === "RUN") {
                 setResult('');
-                const ans = await MadLibApi(inpOne, inpTwo);
+                const ans = await MadLibApi(inpOne, inpTwo, inpThree, inpFour, inpFive, inpSix, inpSeven, inpEight, inpNine, inpTen);
                 disappearDiv.classList.add("d-none");
                 results.classList.remove("d-none");
                 setResult(ans);
@@ -51,42 +51,41 @@ export default function MadLibComponent() {
                                 <Row id='disappearDiv' className='madLibRow h100'>
                                     <Col>
                                         <Row className='g-0'>
-                                            <input onChange={''} className='madLibInput jost darkBlue' placeholder='Celebrity Name'></input>
+                                            <input onChange={(e) => setInpOne(e.target.value)} className='madLibInput jost darkBlue' placeholder='Celebrity Name'></input>
                                         </Row>
                                         <Row className='g-0'>
-                                            <input className='madLibInput jost darkBlue' placeholder='Animal'></input>
+                                            <input onChange={(e) => setInpTwo(e.target.value)} className='madLibInput jost darkBlue' placeholder='Animal'></input>
                                         </Row>
                                         <Row className='g-0'>
-                                            <input className='madLibInput jost darkBlue' placeholder='Noun Ending With S'></input>
+                                            <input onChange={(e) => setInpFive(e.target.value)} className='madLibInput jost darkBlue' placeholder='Number > 1'></input>
                                         </Row>
                                         <Row className='g-0'>
-                                            <input className='madLibInput jost darkBlue' placeholder='Number > 1'></input>
+                                            <input onChange={(e) => setInpSix(e.target.value)} className='madLibInput jost darkBlue' placeholder='Time'></input>
                                         </Row>
                                         <Row className='g-0'>
-                                            <input className='madLibInput jost darkBlue' placeholder='Time'></input>
+                                            <input onChange={(e) => setInpSeven(e.target.value)} className='madLibInput jost darkBlue' placeholder='Height'></input>
                                         </Row>
                                     </Col>
                                     <Col>
                                         <Row className='g-0'>
-                                            <input className='madLibInput jost darkBlue' placeholder='Height'></input>
+                                            <input onChange={(e) => setInpEight(e.target.value)} className='madLibInput jost darkBlue' placeholder='Adjective'></input>
                                         </Row>
                                         <Row className='g-0'>
-                                            <input className='madLibInput jost darkBlue' placeholder='Adjective'></input>
+                                            <input onChange={(e) => setInpNine(e.target.value)} className='madLibInput jost darkBlue' placeholder='Name'></input>
                                         </Row>
                                         <Row className='g-0'>
-                                            <input className='madLibInput jost darkBlue' placeholder='Name'></input>
+                                            <input onChange={(e) => setInpTen(e.target.value)} className='madLibInput jost darkBlue' placeholder='Condiment'></input>
                                         </Row>
                                         <Row className='g-0'>
-                                            <input className='madLibInput jost darkBlue' placeholder='Condiment'></input>
+                                            <input onChange={(e) => setInpThree(e.target.value)} className='madLibInput jost darkBlue' placeholder='Body Part'></input>
                                         </Row>
                                         <Row className='g-0'>
-                                            <input className='madLibInput jost darkBlue' placeholder='Body Part'></input>
+                                            <input onChange={(e) => setInpFour(e.target.value)} className='madLibInput jost darkBlue' placeholder='Noun Ending With S'></input>
                                         </Row>
                                     </Col>
                                 </Row>
                             </div>
-
-                            <h1 id='results' className='greaterLessResult d-none'>{result}</h1>
+                            <h1 id='results' className='madLibResult d-none'>{result}</h1>
                         </div>
                     </div>
 
