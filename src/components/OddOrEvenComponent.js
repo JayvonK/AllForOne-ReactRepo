@@ -35,8 +35,8 @@ export default function OddOrEvenComponent() {
     return (
         <div className='homeBg'>
             <Row className='g-0'>
-                <Col lg={1}></Col>
-                <Col lg={10}>
+                <Col xs={1}></Col>
+                <Col xs={10}>
                     <div className='boxDiv'>
                         <div className='apiBox d-flex justify-content-center align-items-center'>
                             <div id='disappearDiv' className='d-flex justify-content-center align-items-center'>
@@ -52,7 +52,7 @@ export default function OddOrEvenComponent() {
                     </div>
                     <p className='darkBlue apiRules'>*Instructions: Input two numbers above to get the sum</p>
                 </Col>
-                <Col lg={1}></Col>
+                <Col xs={1}></Col>
             </Row>
 
         </div>

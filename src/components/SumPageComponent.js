@@ -41,15 +41,16 @@ export default function SumPageComponent() {
     return (
         <div className='homeBg'>
             <Row className='g-0'>
-                <Col lg={1}></Col>
-                <Col lg={10}>
+                <Col xs={1}></Col>
+                <Col xs={10}>
                     <div className='boxDiv'>
                         <div className='apiBox d-flex justify-content-center align-items-center'>
                             <Row id='disappearDiv' className='sumRow'>
+
                             <Col className='d-flex justify-content-center'>
                                 <input id='input1' onChange={(e) => setNumOne(e.target.value)} className='inputNums' placeholder='123'></input>
                                 </Col>
-                             <Col lg={3} className='d-flex justify-content-center align-items-center'>
+                             <Col xs={3} className='d-flex justify-content-center align-items-center'>
                              <h1 className='plus'>+</h1>
                              </Col>
                              <Col className='d-flex justify-content-center'>
@@ -64,7 +65,7 @@ export default function SumPageComponent() {
                     </div>
                     <p className='darkBlue apiRules'>*Instructions: Input two numbers above to get the sum</p>
                 </Col>
-                <Col lg={1}></Col>
+                <Col xs={1}></Col>
             </Row>
 
 

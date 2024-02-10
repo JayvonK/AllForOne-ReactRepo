@@ -111,6 +111,7 @@
   color: #f0ece5;
   font-family: Jost;
   text-decoration: none;
+  margin-bottom: 0px;
 }
 
 
@@ -169,6 +170,7 @@
   text-align: center;
   background-color: #f0ece5;
   border-radius: 20px;
+  border: none;
 }
 
 .plus {
@@ -242,6 +244,7 @@
   margin-bottom: 15px;
   font-size: 55px;
   background-color: #f0ece5;
+  border: none;
 }
 
 
@@ -269,6 +272,7 @@
   border-radius: 20px;
   margin-left: 75px;
   margin-right: 75px;
+  border: none;
 }
 
 .oddResult {
@@ -292,6 +296,7 @@
   text-align: center;
   background-color: #f0ece5; 
   margin-bottom: 15px;
+  border: none;
 }
 
 .eightBallTxt {
@@ -320,15 +325,14 @@
 .madLibInput {
   height: 59px;
   background-color: #f0ece5;
-  width: 100%;
+  width: 80%;
   font-size: 36px;
-  margin: 20px;
+  margin-bottom: 25px;
   border: none;
 }
 
 .madLibRow {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 20px 20px 0px 20px;
 }
 
 .madLibResult {
@@ -344,4 +348,41 @@
 .alignBetween{
   display: flex;
   align-content: space-between;
+}
+
+@media screen and (max-width: 1630px){
+  .nameInput{
+    width: 85%;
+  }
+
+  .sideNav {
+    width: 390px;
+  }
+
+  .homeBg {
+    margin-left: 390px;
+  }
+
+  .nameInputDiv {
+    display: flex;
+    justify-content: end;
+  }
+
+  .madLibInput {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1340px){
+  .sideNav{
+    display: none;
+  }
+
+  .homeBg {
+    margin-left: 0px;
+  }
+
+  .headerTxt {
+    font-size: 96px;
+  }
 }

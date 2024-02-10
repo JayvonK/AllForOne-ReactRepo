@@ -43,48 +43,54 @@ export default function MadLibComponent() {
     return (
         <div className='homeBg'>
             <Row className='g-0'>
-                <Col lg={1}></Col>
-                <Col lg={10}>
+                <Col xs={1}></Col>
+                <Col xs={10}>
                     <div className='boxDiv'>
                         <div className='madLibBox d-flex justify-content-center align-items-center'>
-                            <div id='disappearDiv' className='w100 h100'>
-                                <Row id='disappearDiv' className='madLibRow h100'>
-                                    <Col>
-                                        <Row className='g-0'>
-                                            <input onChange={(e) => setInpOne(e.target.value)} className='madLibInput jost darkBlue' placeholder='Celebrity Name'></input>
-                                        </Row>
-                                        <Row className='g-0'>
-                                            <input onChange={(e) => setInpTwo(e.target.value)} className='madLibInput jost darkBlue' placeholder='Animal'></input>
-                                        </Row>
-                                        <Row className='g-0'>
-                                            <input onChange={(e) => setInpFive(e.target.value)} className='madLibInput jost darkBlue' placeholder='Number > 1'></input>
-                                        </Row>
-                                        <Row className='g-0'>
-                                            <input onChange={(e) => setInpSix(e.target.value)} className='madLibInput jost darkBlue' placeholder='Time'></input>
-                                        </Row>
-                                        <Row className='g-0'>
-                                            <input onChange={(e) => setInpSeven(e.target.value)} className='madLibInput jost darkBlue' placeholder='Height'></input>
-                                        </Row>
-                                    </Col>
-                                    <Col>
-                                        <Row className='g-0'>
-                                            <input onChange={(e) => setInpEight(e.target.value)} className='madLibInput jost darkBlue' placeholder='Adjective'></input>
-                                        </Row>
-                                        <Row className='g-0'>
-                                            <input onChange={(e) => setInpNine(e.target.value)} className='madLibInput jost darkBlue' placeholder='Name'></input>
-                                        </Row>
-                                        <Row className='g-0'>
-                                            <input onChange={(e) => setInpTen(e.target.value)} className='madLibInput jost darkBlue' placeholder='Condiment'></input>
-                                        </Row>
-                                        <Row className='g-0'>
-                                            <input onChange={(e) => setInpThree(e.target.value)} className='madLibInput jost darkBlue' placeholder='Body Part'></input>
-                                        </Row>
-                                        <Row className='g-0'>
-                                            <input onChange={(e) => setInpFour(e.target.value)} className='madLibInput jost darkBlue' placeholder='Noun Ending With S'></input>
-                                        </Row>
-                                    </Col>
-                                </Row>
-                            </div>
+                            <Row id='disappearDiv' className='madLibRow h100 w100'>
+                                <Col lg={6} xs={12}>
+                                    <div className='d-flex justify-content-center'>
+                                        <input onChange={(e) => setInpOne(e.target.value)} className='madLibInput jost darkBlue' placeholder='Celebrity Name'></input>
+                                    </div>
+
+                                    <div className='d-flex justify-content-center'>
+                                        <input onChange={(e) => setInpTwo(e.target.value)} className='madLibInput jost darkBlue' placeholder='Animal'></input>
+                                    </div>
+
+                                    <div className='d-flex justify-content-center'>
+                                        <input onChange={(e) => setInpFour(e.target.value)} className='madLibInput jost darkBlue' placeholder='Noun Ending With S'></input>
+                                    </div>
+                                    
+                                    <div className='d-flex justify-content-center'>
+                                        <input onChange={(e) => setInpFive(e.target.value)} className='madLibInput jost darkBlue' placeholder='Number > 1'></input>
+                                    </div>
+
+                                    <div className='d-flex justify-content-center'>
+                                        <input onChange={(e) => setInpSix(e.target.value)} className='madLibInput jost darkBlue' placeholder='Time'></input>
+                                    </div>
+                                </Col>
+                                <Col lg={6} xs={12}>
+                                    <div className='d-flex justify-content-center'>
+                                        <input onChange={(e) => setInpSeven(e.target.value)} className='madLibInput jost darkBlue' placeholder='Height'></input>
+                                    </div>
+
+                                    <div className='d-flex justify-content-center'>
+                                        <input onChange={(e) => setInpEight(e.target.value)} className='madLibInput jost darkBlue' placeholder='Adjective'></input>
+                                    </div>
+
+                                    <div className='d-flex justify-content-center'>
+                                        <input onChange={(e) => setInpNine(e.target.value)} className='madLibInput jost darkBlue' placeholder='Name'></input>
+                                    </div>
+
+                                    <div className='d-flex justify-content-center'>
+                                        <input onChange={(e) => setInpTen(e.target.value)} className='madLibInput jost darkBlue' placeholder='Condiment'></input>
+                                    </div>
+
+                                    <div className='d-flex justify-content-center'>
+                                        <input onChange={(e) => setInpThree(e.target.value)} className='madLibInput jost darkBlue' placeholder='Body Part'></input>
+                                    </div>
+                                </Col>
+                            </Row>
                             <h1 id='results' className='madLibResult d-none'>{result}</h1>
                         </div>
                     </div>
@@ -94,7 +100,7 @@ export default function MadLibComponent() {
                     </div>
                     <p className='darkBlue apiRules'>*Instructions: Input two numbers above to get the sum</p>
                 </Col>
-                <Col lg={1}></Col>
+                <Col xs={1}></Col>
             </Row>
 
         </div>
