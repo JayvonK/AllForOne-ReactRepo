@@ -3,8 +3,8 @@ Jayvon Khuth
 Project - All For One React Rebuild
 For this project, I used react to recreate my web application "All for one". When recreating the web application, I had to use bootstrap elements inside of react instead of using tailwind, this wasn't much of a challenge, but it just brought my mind back into all the "rows and columns" thinking. Also I had to get used to using react and it's components and routes and everything
 
-Peer Reviewed By: 
-Peer Review:
+Peer Reviewed By: Bria Harrold
+Peer Review: Great job your figma is a mirror to the final website look. The functionality is perfect with data validation. I liked your navbar when it shrinks down to mobile Overall great work!
 
 
 
