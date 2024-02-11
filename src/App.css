@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -68,6 +69,8 @@
   font-size: 128px;
   font-family: Jost;
   text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .headerTxt:hover {
@@ -77,11 +80,11 @@
 /* Side Navbar Classes */
 
 .offcanvas-body {
-  padding: 0px;
+  padding: 0px !important;
 }
 
 .sideBtn {
-  display: none ;
+  display: none;
 }
 
 .sideNav {
@@ -158,7 +161,7 @@
   width: 100%;
 }
 
-.homeRules{
+.homeRules {
   font-size: 32px;
   font-family: Jost;
   text-align: center;
@@ -314,7 +317,7 @@
   font-family: Jost;
   font-size: 64px;
   text-align: center;
-  background-color: #f0ece5; 
+  background-color: #f0ece5;
   margin-bottom: 15px;
   border: none;
 }
@@ -365,13 +368,13 @@
   overflow-x: hidden;
 }
 
-.alignBetween{
+.alignBetween {
   display: flex;
   align-content: space-between;
 }
 
-@media screen and (max-width: 1630px){
-  .nameInput{
+@media screen and (max-width: 1630px) {
+  .nameInput {
     width: 85%;
   }
 
@@ -397,8 +400,8 @@
   }
 }
 
-@media screen and (max-width: 1340px){
-  .sideNav{
+@media screen and (max-width: 1340px) {
+  .sideNav {
     display: none;
   }
 
@@ -417,30 +420,165 @@
   }
 }
 
-@media screen and (max-width: 992px){
-.headerTxt{
-  font-size: 64px;
-  line-height: 65px;
+@media screen and (max-width: 992px) {
+  .headerTxt {
+    font-size: 64px;
+    line-height: 65px;
+  }
+
+  .sumRow {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .header {
+    height: 166px;
+  }
+
+  .boxDiv {
+    margin-top: 166px;
+  }
+
+  .nameInput {
+    width: 100%;
+  }
+
+  .nameDiv {
+    padding-bottom: 15px;
+  }
+
+  .inputOdd {
+    font-size: 70px;
+  }
+
 }
 
-.sumRow {
-  padding-top: 35px;
-  padding-bottom: 35px;
+@media screen and (max-width: 600px) {
+  .navTxt {
+    font-size: 28px;
+  }
+
+  .navImg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .navItem {
+    padding-left: 0px;
+    padding-bottom: 20px;
+  }
 }
 
-.header {
-  height: 166px;
+@media screen and (max-width: 500px) {
+
+  .homeTxt {
+    font-size: 64px;
+  }
+  
+  .inputNums {
+    height: 79px;
+    font-size: 64px;
+  }
+
+  .eightBallTxt {
+    font-size: 48px;
+    margin-bottom: 25px;
+  }
+
+  .inputEightBall {
+    height: 91px;
+    font-size: 48px;
+  }
+
+  .nameTxt {
+    font-size: 32px;
+  }
+  .nameInput {
+    height: 46px;
+  }
+  .nameDiv {
+    padding-top: 10px;
+  }
+
+  .nameRow {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .sumRow {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .plus {
+    font-size: 64px;
+  }
+
+  .apiBox {
+    min-height: 275px;
+  }
+
+  .inputOdd {
+    height: 79px;
+    font-size: 64px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .runBtn {
+    width: 220px;
+    height: 70px;
+    font-size: 32px;
+    margin-top: 50px;
+  }
+
+  .homeRules {
+    font-size: 24px;
+  }
+
+  .apiRules {
+    font-size: 24px;
+  }
+
+  .madLibInput {
+    height: 46px;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .madLibRow{
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 }
 
-.boxDiv {
-  margin-top: 166px;
-}
+@media screen and (max-width: 405px) {
+  .madLibInput {
+    font-size: 24px;
+  }
 
-.nameInput{
-  width: 100%;
-}
+  .madLibRow{
+    padding-left: 2px;
+    padding-right: 2px;
+  }
 
-.nameDiv{
-  padding-bottom: 15px;
-}
+  .sumRow {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .inputOdd {
+    font-size: 60px;
+  }
+
+  .navTxt {
+    font-size: 20px;
+  }
+
+  .navImg {
+    width: 25px;
+    height: 25px;
+  }
 }
