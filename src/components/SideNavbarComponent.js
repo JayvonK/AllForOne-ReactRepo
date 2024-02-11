@@ -16,7 +16,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import mobile from '../assets/mobile icon.png';
 
 export default function SideNavbarComponent() {
-  
+
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -87,7 +87,6 @@ export default function SideNavbarComponent() {
         </div>
 
         
-
       </div>
       <Button className='sideBtn' onClick={handleShow}>
           <img src={mobile}></img>
