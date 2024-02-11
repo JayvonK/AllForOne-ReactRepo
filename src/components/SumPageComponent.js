@@ -3,10 +3,12 @@ import { SumApi } from '../Services/DataServices.js';
 import { useState } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { sum } from './SideNavbarComponent.js';
 
 
 
 export default function SumPageComponent() {
+
 
     let disappearDiv = document.getElementById("disappearDiv");
     let results = document.getElementById("results");

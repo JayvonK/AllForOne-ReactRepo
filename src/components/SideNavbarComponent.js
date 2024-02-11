@@ -15,23 +15,13 @@ import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import mobile from '../assets/mobile icon.png';
 
+
+
 export default function SideNavbarComponent() {
-  let sumee = document.getElementById("sumee");
 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
-  const sumClick = () => {
-    sumee.className = "link d-flex active";
-  }
-
-
-
-
-
-
-
 
 
   return (
@@ -39,7 +29,7 @@ export default function SideNavbarComponent() {
       <div className='sideNav'>
         <div className='itemsDiv'>
           <div className='navItem'>
-            <Link id='sumee' to={'SumPage'} onClick={() => sumClick()} className='link d-flex'>
+            <Link id='sum' to={'SumPage'} className='link d-flex'>
               <img className='navImg' src={plus}/>
               <h1 className='navTxt'>THE SUM</h1>
             </Link>
@@ -171,6 +161,6 @@ export default function SideNavbarComponent() {
           </Offcanvas.Body>
         </Offcanvas>
     </div>
-
   )
 }
+

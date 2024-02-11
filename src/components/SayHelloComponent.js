@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 export default function SayHelloComponent() {
+    
     let disappearDiv = document.getElementById("disappearDiv");
     let results = document.getElementById("results");
     let input1 = document.getElementById("input1");

@@ -68,6 +68,7 @@
   background-color: #f0ece5;
   position: fixed;
   top: 0px;
+  z-index: 30;
 }
 
 .headerTxt {
@@ -99,6 +100,7 @@
   height: 100%;
   overflow-y: auto;
   top: 0px;
+  z-index: 20;
 }
 
 .navItem {
@@ -128,11 +130,7 @@
   background-color: hsl(0, 0%, 30%);
 }
 
-.active {
-  background-color: hsl(0, 0%, 30%)
-}
-
-.link:active {
+.link:focus {
   background-color: hsl(0, 0%, 30%);
 }
 
