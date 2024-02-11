@@ -92,7 +92,7 @@ export default function SideNavbarComponent() {
         
       </div>
       <Button className='sideBtn' onClick={handleShow}>
-          <img src={mobile}></img>
+          <img src={mobile} alt='mobile logo'></img>
         </Button>
 
         <Offcanvas show={show} onHide={handleClose}>
