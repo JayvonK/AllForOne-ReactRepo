@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 
 export default function HomePageComponent() {
   return (
-    <div className='homeBg'>
+    <div className='homeBg2'>
       <Row className='g-0'>
         <Col xs={1}></Col>
         <Col xs={10}>

@@ -134,6 +134,10 @@
   background-color: hsl(0, 0%, 30%);
 }
 
+.active {
+  background-color: blue;
+}
+
 .navTxt {
   font-size: 40px;
   color: #f0ece5;
@@ -152,6 +156,14 @@
 /* Home Page Classes */
 
 .homeBg {
+  background-image: url(./assets/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin-left: 470px;
+}
+
+.homeBg2 {
   background-image: url(./assets/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -236,7 +248,7 @@
 }
 
 .apiBox {
-  margin-top: 150px;
+  margin-top: 125px;
   background-color: #161a30;
   min-height: 275px;
   width: 100%;
@@ -417,6 +429,10 @@
     margin-left: 390px;
   }
 
+  .homeBg2 {
+    margin-left: 390px;
+  }
+
   .madLibBg {
     margin-left: 390px;
   }
@@ -449,6 +465,10 @@
   }
 
   .homeBg {
+    margin-left: 0px;
+  }
+
+  .homeBg2 {
     margin-left: 0px;
   }
 

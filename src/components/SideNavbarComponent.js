@@ -23,13 +23,12 @@ export default function SideNavbarComponent() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-
   return (
     <div>
       <div className='sideNav'>
         <div className='itemsDiv'>
           <div className='navItem'>
-            <Link id='sum' to={'SumPage'} className='link d-flex'>
+            <Link to={'SumPage'} className='link d-flex'>
               <img className='navImg' src={plus}/>
               <h1 className='navTxt'>THE SUM</h1>
             </Link>
