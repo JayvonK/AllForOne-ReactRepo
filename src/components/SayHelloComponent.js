@@ -52,7 +52,7 @@ export default function SayHelloComponent() {
                     <div className='d-flex justify-content-center'>
                         <button id='runBtn' onClick={() => runBtnClick()} className='runBtn'>{runBtn}</button>
                     </div>
-                    <p className='darkBlue apiRules'>*Instructions: Input two numbers above to get the sum</p>
+                    <p className='darkBlue apiRules'>*Instructions: Input your name above to display a hello message</p>
                 </Col>
                 <Col xs={1}></Col>
             </Row>

@@ -51,7 +51,7 @@ export default function ReverseIt1Component() {
                     <div className='d-flex justify-content-center'>
                         <button id='runBtn' onClick={() => runBtnClick()} className='runBtn'>{runBtn}</button>
                     </div>
-                    <p className='darkBlue apiRules'>*Instructions: Input two numbers above to get the sum</p>
+                    <p className='darkBlue apiRules'>*Instructions: Input an alphanumeric above to reverse it</p>
                 </Col>
                 <Col xs={1}></Col>
             </Row>

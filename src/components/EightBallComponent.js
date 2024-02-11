@@ -55,11 +55,10 @@ export default function EightBallComponent() {
                     <div className='d-flex justify-content-center'>
                         <button id='runBtn' onClick={() => runBtnClick()} className='runBtn'>{runBtn}</button>
                     </div>
-                    <p className='darkBlue apiRules'>*Instructions: Input two numbers above to get the sum</p>
+                    <p className='darkBlue apiRules'>*Instructions: Ask the 8 ball a yes or no question</p>
                 </Col>
                 <Col xs={1}></Col>
             </Row>
-            {/* <Button as={Link} to={'/'} variant="primary">Primary</Button>{' '} */}
         </div>
     )
 }

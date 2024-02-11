@@ -51,7 +51,7 @@ export default function OddOrEvenComponent() {
                     <div className='d-flex justify-content-center'>
                         <button id='runBtn' onClick={() => runBtnClick()} className='runBtn'>{runBtn}</button>
                     </div>
-                    <p className='darkBlue apiRules'>*Instructions: Input two numbers above to get the sum</p>
+                    <p className='darkBlue apiRules'>*Instructions: Input a number above to find out if it is odd or even</p>
                 </Col>
                 <Col xs={1}></Col>
             </Row>

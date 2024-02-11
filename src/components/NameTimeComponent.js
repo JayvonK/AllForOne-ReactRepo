@@ -74,7 +74,7 @@ export default function NameTimeComponent() {
                     <div className='d-flex justify-content-center'>
                         <button id='runBtn' onClick={() => runBtnClick()} className='runBtn'>{runBtn}</button>
                     </div>
-                    <p className='darkBlue apiRules'>*Instructions: Input two numbers above to get the sum</p>
+                    <p className='darkBlue apiRules'>*Instructions: Input your name and a time above to display a sentence</p>
                 </Col>
                 <Col xs={1}></Col>
             </Row>
