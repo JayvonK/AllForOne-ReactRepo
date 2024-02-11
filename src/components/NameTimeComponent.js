@@ -3,7 +3,6 @@ import { useState } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { NameTimeApi } from '../Services/DataServices.js';
-
 export default function NameTimeComponent() {
 
     let disappearDiv = document.getElementById("disappearDiv");
