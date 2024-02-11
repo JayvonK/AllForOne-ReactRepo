@@ -1,3 +1,16 @@
+Jayvon Khuth
+2/11/2024
+Project - All For One React Rebuild
+For this project, I used react to recreate my web application "All for one". When recreating the web application, I had to use bootstrap elements inside of react instead of using tailwind, this wasn't much of a challenge, but it just brought my mind back into all the "rows and columns" thinking. Also I had to get used to using react and it's components and routes and everything
+
+Peer Reviewed By: 
+Peer Review:
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
