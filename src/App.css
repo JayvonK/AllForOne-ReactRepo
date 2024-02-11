@@ -56,6 +56,9 @@
 }
 
 /* Header Classes */
+.mHead {
+  display: none;
+}
 
 .header {
   width: 100vw;
@@ -148,6 +151,14 @@
   margin-left: 470px;
 }
 
+.madLibBg {
+    background-image: url(./assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin-left: 470px;
+}
+
 .boxDiv {
   display: flex;
   justify-content: center;
@@ -166,8 +177,8 @@
   font-family: Jost;
   text-align: center;
   margin-top: 100px;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 70px;
+  padding-left: 70px;
   margin-bottom: 0px;
 }
 
@@ -228,6 +239,8 @@
   font-family: Jost;
   text-align: center;
   margin-top: 35px;
+  padding-right: 70px;
+  padding-left: 70px;
   margin-bottom: 0px;
 }
 
@@ -241,6 +254,7 @@
   padding-left: 45px;
   padding-right: 45px;
 }
+
 
 
 
@@ -270,6 +284,15 @@
   border: none;
 }
 
+.nameResult {
+  padding: 20px;
+  color: #f0ece5;
+  font-size: 64px;
+  font-family: Jost;
+  text-align: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 
 /* Greater Less Than Page */
 
@@ -386,6 +409,10 @@
     margin-left: 390px;
   }
 
+  .madLibBg {
+    margin-left: 390px;
+  }
+
   .nameInputDiv {
     display: flex;
     justify-content: end;
@@ -405,8 +432,21 @@
     display: none;
   }
 
+  .apiRules {
+    padding-bottom: 20px;
+  }
+
+  .madLibBox {
+    margin-top: 150px;
+  }
+
   .homeBg {
     margin-left: 0px;
+  }
+
+  .madLibBg {
+    margin-left: 0px;
+    height: 100%;
   }
 
   .headerTxt {
@@ -416,7 +456,14 @@
   .sideBtn {
     display: block;
     position: absolute;
-    top: 300px;
+    top: 240px;
+    background-color: #00000000 !important;
+    border-color: #00000000 !important;
+    left: 5%;
+  }
+
+  .madLibResult {
+    font-size: 30px;
   }
 }
 
@@ -424,6 +471,22 @@
   .headerTxt {
     font-size: 64px;
     line-height: 65px;
+  }
+
+  .homeBg {
+    height: 100%;
+  }
+
+  .apiRules {
+    padding-bottom: 180px;
+  }
+
+  .homeRules {
+    padding-bottom: 100px;
+  }
+
+  .nameResult {
+    font-size: 40px;
   }
 
   .sumRow {
@@ -451,6 +514,15 @@
     font-size: 70px;
   }
 
+  .madLibResult {
+    font-size: 24px;
+  }
+
+  .sideBtn {
+    top: 180px;
+    left: 4%;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -467,14 +539,58 @@
     padding-left: 0px;
     padding-bottom: 20px;
   }
+
+  .nameResult {
+    font-size: 32px;
+  }
+
+  .madLibResult {
+    font-size: 20px;
+  }
+
+
 }
 
 @media screen and (max-width: 500px) {
+  
+  .homeBg {
+    height: 100vh;
+  }
+  
+  .sumResult {
+    font-size: 64px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .greaterLessResult {
+    font-size: 42px;
+  }
+
+  .nameResult {
+    font-size: 28px;
+  }
+
+  .oddResult {
+    font-size: 64px;
+  }
+
+  .eightBallResult {
+    font-size: 42px;
+  }
+
+  .dHead {
+    display: none;
+  }
+
+  .mHead {
+    display: block;
+  }
 
   .homeTxt {
     font-size: 64px;
   }
-  
+
   .inputNums {
     height: 79px;
     font-size: 64px;
@@ -493,9 +609,12 @@
   .nameTxt {
     font-size: 32px;
   }
+
   .nameInput {
     height: 46px;
+    font-size: 28px;
   }
+
   .nameDiv {
     padding-top: 10px;
   }
@@ -536,10 +655,16 @@
 
   .homeRules {
     font-size: 24px;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-bottom: 100px;
   }
 
   .apiRules {
     font-size: 24px;
+    padding-right: 35px;
+    padding-left: 35px;
+    padding-bottom: 100px;
   }
 
   .madLibInput {
@@ -548,7 +673,7 @@
     margin-bottom: 20px;
   }
 
-  .madLibRow{
+  .madLibRow {
     padding-left: 8px;
     padding-right: 8px;
   }
@@ -559,7 +684,7 @@
     font-size: 24px;
   }
 
-  .madLibRow{
+  .madLibRow {
     padding-left: 2px;
     padding-right: 2px;
   }

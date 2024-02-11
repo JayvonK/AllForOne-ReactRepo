@@ -28,6 +28,8 @@ export default function NameTimeComponent() {
             } else {
                 nameInput.value = "";
                 timeInput.value = "";
+                setNumOne('');
+                setNumTwo('');
                 disappearDiv.classList.remove("d-none");
                 results.classList.add("d-none");
                 setRunBtn('RUN');
@@ -67,7 +69,7 @@ export default function NameTimeComponent() {
                                     </Col>
                                 </Row>
                             </div>
-                            <h1 id='results' className='greaterLessResult d-none'>{result}</h1>
+                            <h1 id='results' className='nameResult d-none'>{result}</h1>
                         </div>
                     </div>
                     <div className='d-flex justify-content-center'>

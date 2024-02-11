@@ -26,6 +26,7 @@ export default function EightBallComponent() {
                 setRunBtn('AGAIN');
             } else {
                 input1.value = "";
+                setNumOne('');
                 disappearDiv.classList.remove("d-none");
                 results.classList.add("d-none");
                 setRunBtn('RUN');

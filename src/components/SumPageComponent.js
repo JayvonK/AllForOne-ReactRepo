@@ -30,6 +30,8 @@ export default function SumPageComponent() {
             } else {
                 input1.value = "";
                 input2.value = "";
+                setNumOne('');
+                setNumTwo('');
                 disappearDiv.classList.remove("d-none");
                 results.classList.add("d-none");
                 setRunBtn('RUN');
