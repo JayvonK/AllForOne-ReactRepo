@@ -29,61 +29,61 @@ export default function SideNavbarComponent() {
         <div className='itemsDiv'>
           <div className='navItem'>
             <Link to={'SumPage'} className='link d-flex'>
-              <img className='navImg' src={plus}/>
+              <img className='navImg' src={plus} alt='plus logo'/>
               <h1 className='navTxt'>THE SUM</h1>
             </Link>
           </div>
           <div className='navItem'>
             <Link to={'NameTimePage'} className='link d-flex'>
-              <img className='navImg' src={person}/>
+              <img className='navImg' src={person} alt='person logo'/>
               <h1 className='navTxt'>NAME & TIME</h1>
             </Link>
           </div>
           <div className='navItem'>
             <Link to={'GreaterLessPage'} className='link d-flex'>
-              <img className='navImg' src={greater}/>
+              <img className='navImg' src={greater} alt='greater than logo'/>
               <h1 className='navTxt'>GREATER?</h1>
             </Link>
           </div>
           <div className='navItem'>
             <Link to={'MadLibPage'} className='link d-flex'>
-              <img className='navImg' src={text}/>
+              <img className='navImg' src={text} alt='text logo'/>
               <h1 className='navTxt'>MAD LIB</h1>
             </Link>
           </div>
           <div className='navItem'>
             <Link to={'OddEvenPage'} className='link d-flex'>
-              <img className='navImg' src={odd}/>
+              <img className='navImg' src={odd} alt='odd logo'/>
               <h1 className='navTxt'>ODD OR EVEN</h1>
             </Link>
           </div>
           <div className='navItem'>
             <Link to={'ReverseOnePage'} className='link d-flex'>
-              <img className='navImg' src={reverseOne}/>
+              <img className='navImg' src={reverseOne} alt='reverse I logo'/>
               <h1 className='navTxt'>REVERSE IT I</h1>
             </Link>
           </div>
           <div className='navItem'>
             <Link to={'ReverseTwoPage'} className='link d-flex'>
-              <img className='navImg' src={reverseTwo}/>
+              <img className='navImg' src={reverseTwo} alt='reverse II logo'/>
               <h1 className='navTxt'>REVERSE IT II</h1>
             </Link>
           </div>
           <div className='navItem'>
             <Link to={'EightBallPage'} className='link d-flex'>
-              <img className='navImg' src={eightBall}/>
+              <img className='navImg' src={eightBall} alt='8 ball logo'/>
               <h1 className='navTxt'>8 BALL</h1>
             </Link>
           </div>
           <div className='navItem'>
             <Link to={'RestaurantPage'} className='link d-flex'>
-              <img className='navImg' src={food}/>
+              <img className='navImg' src={food} alt='food logo'/>
               <h1 className='navTxt'>RESTAURANTS</h1>
             </Link>
           </div>
           <div className='navItem'>
             <Link to={'SayHelloPage'} className='link d-flex'>
-              <img className='navImg' src={hello} />
+              <img className='navImg' src={hello} alt='waving logo' />
               <h1 className='navTxt'>SAY HELLO</h1>
             </Link>
           </div>
@@ -97,63 +97,63 @@ export default function SideNavbarComponent() {
 
         <Offcanvas show={show} onHide={handleClose}>
           <Offcanvas.Body>
-          <div className='navItem '>
+          <div className='navItem'>
             <Link to={'SumPage'} className='link d-flex'>
-              <img className='navImg' src={plus} />
+              <img className='navImg' src={plus} alt='plus logo'/>
               <h1 className='navTxt'>THE SUM</h1>
             </Link>
           </div>
-          <div className='navItem '>
+          <div className='navItem'>
             <Link to={'NameTimePage'} className='link d-flex'>
-              <img className='navImg' src={person} />
+              <img className='navImg' src={person} alt='person logo'/>
               <h1 className='navTxt'>NAME & TIME</h1>
             </Link>
           </div>
-          <div className='navItem '>
+          <div className='navItem'>
             <Link to={'GreaterLessPage'} className='link d-flex'>
-              <img className='navImg' src={greater} />
+              <img className='navImg' src={greater} alt='greater than logo'/>
               <h1 className='navTxt'>GREATER?</h1>
             </Link>
           </div>
-          <div className='navItem '>
+          <div className='navItem'>
             <Link to={'MadLibPage'} className='link d-flex'>
-              <img className='navImg' src={text} />
+              <img className='navImg' src={text} alt='text logo'/>
               <h1 className='navTxt'>MAD LIB</h1>
             </Link>
           </div>
-          <div className='navItem '>
+          <div className='navItem'>
             <Link to={'OddEvenPage'} className='link d-flex'>
-              <img className='navImg' src={odd} />
+              <img className='navImg' src={odd} alt='odd logo'/>
               <h1 className='navTxt'>ODD OR EVEN</h1>
             </Link>
           </div>
-          <div className='navItem '>
+          <div className='navItem'>
             <Link to={'ReverseOnePage'} className='link d-flex'>
-              <img className='navImg' src={reverseOne} />
+              <img className='navImg' src={reverseOne} alt='reverse I logo'/>
               <h1 className='navTxt'>REVERSE IT I</h1>
             </Link>
           </div>
-          <div className='navItem '>
+          <div className='navItem'>
             <Link to={'ReverseTwoPage'} className='link d-flex'>
-              <img className='navImg' src={reverseTwo} />
+              <img className='navImg' src={reverseTwo} alt='reverse II logo'/>
               <h1 className='navTxt'>REVERSE IT II</h1>
             </Link>
           </div>
-          <div className='navItem '>
+          <div className='navItem'>
             <Link to={'EightBallPage'} className='link d-flex'>
-              <img className='navImg' src={eightBall} />
+              <img className='navImg' src={eightBall} alt='8 ball logo'/>
               <h1 className='navTxt'>8 BALL</h1>
             </Link>
           </div>
-          <div className='navItem '>
+          <div className='navItem'>
             <Link to={'RestaurantPage'} className='link d-flex'>
-              <img className='navImg' src={food} />
+              <img className='navImg' src={food} alt='food logo'/>
               <h1 className='navTxt'>RESTAURANTS</h1>
             </Link>
           </div>
-          <div className='navItem '>
+          <div className='navItem'>
             <Link to={'SayHelloPage'} className='link d-flex'>
-              <img className='navImg' src={hello} />
+              <img className='navImg' src={hello} alt='waving logo' />
               <h1 className='navTxt'>SAY HELLO</h1>
             </Link>
           </div>
