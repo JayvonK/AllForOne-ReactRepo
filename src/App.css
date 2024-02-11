@@ -55,6 +55,8 @@
   height: 100%;
 }
 
+
+
 /* Header Classes */
 .mHead {
   display: none;
@@ -123,6 +125,14 @@
 }
 
 .link:hover {
+  background-color: hsl(0, 0%, 30%);
+}
+
+.active {
+  background-color: hsl(0, 0%, 30%)
+}
+
+.link:active {
   background-color: hsl(0, 0%, 30%);
 }
 
