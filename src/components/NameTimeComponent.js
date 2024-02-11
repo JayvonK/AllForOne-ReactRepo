@@ -45,22 +45,22 @@ export default function NameTimeComponent() {
                 <Col xs={10}>
                     <div className='boxDiv'>
                         <div className='apiBox d-flex justify-content-center align-items-center'>
-                            <div id='disappearDiv' className='w100'>
+                            <div id='disappearDiv' className='w100 nameDiv'>
                                 <Row className='nameRow'>
-                                    <Col xs={3}>
+                                    <Col lg={3} xs={12}>
                                         <p className='nameTxt'>Name:</p>
                                     </Col>
-                                    <Col xs={9} className='d-flex align-items-center'>
-                                        <div className='nameInputDiv w100'>
+                                    <Col lg={9} xs={12} className='d-flex align-items-center'>
+                                        <div className='nameInputDiv w100 '>
                                             <input id='nameInput' onChange={(e) => setNumOne(e.target.value)} className='nameInput darkBlue jost'></input>
                                         </div>
                                     </Col>
                                 </Row>
                                 <Row className='nameRow'>
-                                    <Col xs={3}>
+                                    <Col lg={3} xs={12}>
                                         <p className='nameTxt'>Time:</p>
                                     </Col>
-                                    <Col xs={9} className='d-flex align-items-center'>
+                                    <Col lg={9} xs={12} className='d-flex align-items-center'>
                                         <div className='nameInputDiv w100'>
                                             <input id='timeInput' onChange={(e) => setNumTwo(e.target.value)} className='nameInput darkBlue jost'></input>
                                         </div>

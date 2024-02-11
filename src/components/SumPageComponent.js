@@ -50,7 +50,7 @@ export default function SumPageComponent() {
                             <Col className='d-flex justify-content-center'>
                                 <input id='input1' onChange={(e) => setNumOne(e.target.value)} className='inputNums' placeholder='123'></input>
                                 </Col>
-                             <Col xs={3} className='d-flex justify-content-center align-items-center'>
+                             <Col lg={3} xs={12} className='d-flex justify-content-center align-items-center'>
                              <h1 className='plus'>+</h1>
                              </Col>
                              <Col className='d-flex justify-content-center'>

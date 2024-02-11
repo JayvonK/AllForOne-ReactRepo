@@ -10,7 +10,7 @@ export default function HomePageComponent() {
         <Col xs={10}>
           <div className='boxDiv'>
             <div className='box d-flex justify-content-center align-items-center'>
-              <h1 className='homeTxt'>Choose an api</h1>
+              <h1 className='homeTxt'>choose an api</h1>
             </div>
           </div>
         </Col>
